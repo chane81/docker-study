@@ -1,0 +1,14 @@
+{
+  "name": "1.docker-compose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "docker-up": "docker-compose up --build -d"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
+  }
+}
