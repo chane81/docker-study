@@ -1,5 +1,16 @@
 # docker-compose
 
+## 명령
+
+- compose 시작
+  > docker-compose up
+
+- compose build 하고 시작
+  > docker-compose up --build
+
+- compose build 하고 백그라운드로 시작
+  > docker-compose up --build -d
+
 ## 멀티 컨테이너 실행시 및 컨테이너간 연결시 docker-composne 를 이용함
 
 - 컨테이너 호스트 연결시에 http://~url 형식이 아닌 컨테이너명을 명시해 주면 호스트 연결이 가능하다
