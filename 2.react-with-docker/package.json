@@ -16,7 +16,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dok-build-dev": "docker build -f Dockerfile.dev -t chane81/docker-react-app ./",
-    "dok-run-dev": "docker run -it -d -p 3000:3000 chane81/docker-react-app"
+    "dok-run-dev": "docker run -it -e CHOKIDAR_USEPOLLING=true --name docker-react-app-con -p 3000:3000 -v /usr/src/app/node_modules -v %cd%:/usr/src/app chane81/docker-react-app",
+    "dok-bash": "docker exec -it docker-react-app-con /bin/ash",
+    "dok-del": "docker rm -f docker-react-app-con"
   },
   "eslintConfig": {
     "extends": "react-app"
