@@ -9,4 +9,6 @@ services:
     volumes:
       - /usr/src/app/node_modules
       - ./:/usr/src/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     stdin_open: true
