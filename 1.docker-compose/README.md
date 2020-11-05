@@ -1,4 +1,15 @@
-# docker-compose
+# docker
+
+## docker Network
+
+- 네트워크 조회
+  - docker network ls
+- 네트워크 생성
+  - docker network create our_net
+- 네트워크 상세정보
+  - docker network inspect our_net
+
+## docker-compose
 
 ## 명령
 
