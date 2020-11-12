@@ -52,6 +52,18 @@
 
       after_success:
         - echo "Test Success!"
+
+      deploy:
+        provider: elasticbeanstalk
+        region: "ap-northeast-2"
+        app: "docker-react-app-v2"
+        env: "DockerReactAppV2-env"
+        bucket_name: "elasticbeanstalk-ap-northeast-2-611302950754"
+        on:
+          branch: master
+
+        access_key_id: $AWS_ACCESS_KEY
+        secret_access_key: $AWS_SECRET_KEY
       ```
 
 - deploy 구성의 aws 키 명 이슈
